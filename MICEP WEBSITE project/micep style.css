@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html body {
+    -webkit-text-size-adjust: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #f5f5f5;
+    font-family: 'poppins', sans sans-serif;
+}
+
+
+    /*------------------------styles for navigation plane-------------------------*/
+.top-notify {
+    background:#ff6700;
+    color: white;
+    text-align: center;
+    font-family: 'poppins', sans sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    padding: 0px 4%;
+}
+
+
+    /*------------------------external entries-------------------------*/
+.external-entries {
+    background: rgb(19, 18, 18);
+    color: #c5c0c0;
+    font-size: 15px;
+    padding: 10px 4%;
+    font-family:  'poppins', sans sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.external-entries-first-zone a {
+    margin-right: 25px;
+    position: relative;
+}
+
+.external-entries-first-zone a:last-child::after {
+    content: '';
+    display: none;
+}
+
+.external-entries-first-zone a::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: rgba(197, 192, 192, 0.548);
+    right: -15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.external-entries-entry a {
+    margin-left: 25px;
+    position: relative;
+}
+
+.external-entries-entry a:last-child::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: rgba(197, 192, 192, 0.548);
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+
+
+    /*------------------------main category-------------------------*/
+.main-category {
+    background: white;
+    text-align: right;
+    padding: 23px 4%;
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+
+.main-category a {
+    margin-left: 4%;
+    font-weight: 100;
+}
+
+.micep-about-nav {
+    background: #e7e5e5;
+    line-height: 1;
+    color:rgb(29, 26, 26);
+    padding: 21px 4%; 
+    font-size: 13px;
+    text-align: right;
+}
+
+.micep-about-nav a {
+    margin-right: 20px;
+}
+
+.micep-about-nav a:last-child {
+    margin-right: 0;
+}
+
+
+
+    
+    /*------------------style for body section (content)------------------*/
+.micep-about-head {
+    background:#ff6700;
+    padding: 8% 4%;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    box-sizing: border-box;
+    font-weight: 500;
+    border: solid 2px white;
+    border-radius: 18px;
+    border-top-width: 18px; 
+    border-bottom-width: 23px;
+    background:#ff6700;
+    font-family: 'poppins';
+    font-size: 90px;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box p:first-child {
+    line-height: 100px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.box p:nth-child(2) {
+    font-size: 35px;
+    margin: 0 2px;
+}
+
+.box-words {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4%;
+    font-family: 'poppins';
+}
+
+
+
+
+    /*-----------------style for another section in body (logo)-----------------*/
+.micep-about-con {
+    background:#f5f5f5;
+    padding: 8% 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.micep-about-con-logo-section {
+    font-size: 65px;
+    font-family: cursive;
+    padding-left: 13px;
+    color:rgb(122, 110, 110);
+}
+
+.micep-about-con-section2 {
+    font-size: 18px;
+    font-family: Arial;
+    color:rgb(122, 110, 110);
+    padding-right: 68px;
+    font-family: "poppins";
+}
+
+.section2-header {
+    font-weight: 520;
+    font-size: 39px;
+    font-weight: 500;
+    color:rgb(73, 70, 70);
+    display: inline-block;
+}
+
+
+
+
+
+    /*---------------stlyes in content section inside body section (bodyconent) ---------------*/
+.bodycontent {
+    font-family: 'poppins';
+    text-align: center;
+    font-size: 17px;
+    background-image: url(black.jpg);
+    background-size: cover;
+    color:white;
+    padding: 79px 4% 56px;
+}
+
+.bodycontent1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+    /*---------------styles in culture section in body (culture)---------------*/
+.culturesection {
+    background: #f5f5f5;
+    font-size: 16px;
+    padding-top: 129px;
+    padding-bottom: 66px;
+    color:rgb(85, 78, 78);
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.culturehead {
+    font-size: 44px;
+    padding-bottom: 12px;
+}
+
+.culturecontent {
+    font-size: 16px;
+}
+
+
+
+
+    /*---------------- styles for pictures in body section---------------- */
+.pictures {
+    display: flex;
+    padding: 0 4%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.picture {
+    flex-basis: 48%;
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(248, 153, 169);
+}
+
+    /*-------------------styles for secondcontent in body-------------------*/
+.secondcontent {
+    display: flex;
+    background: #f5f5f5;
+    justify-content: space-between;
+    padding: 5% 4% 8%;
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.secondcontent-element {
+    text-align: center;
+    flex-basis: 46%;
+}
+
+.secondcontent-element h1 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.secondcontent-element p {
+    font-size: 16px;
+}
+
+
+
+
+    /*-----------------styles for careers part in body -----------------*/
+.careers {
+    background-image: url(career\ girl.jpg);
+    background-size: cover;
+    padding: 10% 4% 8%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.careers h1 {
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+.careerscontent {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.careers-line {
+    background: white;
+    height: 1px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6% auto;
+}
+
+
+
+
+    /*-------------------styles for media in body-------------------*/
+.media {
+    background:#f5f5f5;
+    padding: 4% 4%;
+    display: flex;
+    align-items: center;
+}
+
+.media1 {
+    font-size: 13px;
+    flex-basis: 30%;
+}
+
+.media1 input {
+    padding: 10px 12px;
+    outline: none;
+    font-size: 20px;
+}
+
+
+
+
+    /*---------------------styles for footer---------------------*/
+.footerorg {
+    background: rgb(46, 45, 45); 
+}
+
+.footer {
+    background: rgb(46, 45, 45);
+    color: rgb(221, 212, 212);
+    display: flex;
+    padding: 4%;
+    font-size: 15px;
+}
+
+.footer1 {
+    margin-right: 4%;
+}
+
+.footer1 h1 {
+    font-size: 25px;
+}
+
+
+
+
+
+    /*--------------------styles for lastfooter--------------------*/
+.lastfooter {
+    background: rgb(46, 45, 45);
+    color: rgb(221, 212, 212);
+    font-size: 18px;
+    padding: 15px 4% 34px;
+}
+
+.footer-line {
+    background: white;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 2%;
+}
+
+
+
+
+    /*-----------------styles for anchors, paragraphs, hotizontal line-----------------*/
+a {
+    text-decoration: none;
+}
+a:link {
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+a:active {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-------------------------QUERYING MEDIAS----------------------*/
+@media screen and (max-width: 500px) {
+    .top-notify {
+        display: none;
+    }
+
+    .external-entries-first-zone {
+        display: none;
+    }
+}
+

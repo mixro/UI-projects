@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign In & Up form | registration form</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="registrationStyle.css" />
+        <link href="" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <style>
+   
+    </style>
+    <body>
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="actio_page.php">
+
+                <!--image-->
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="close Modal">&times;</span>
+                    <img src="tw.png" class="avatar" />
+                </div>
+
+                <div class="container">
+                    <!--username-->
+                    <label><b>Username</b></label>
+                    <input type="text" placeholders="Enter Username" name="uname" required />
+
+                    <!--password-->
+                    <label><b>Password</b></label>
+                    <input type="password" placeholders="Enter Password" name="psw" required />
+
+                    <!--gender section-->
+                    <div class="genders">
+                        <label><b>Gender</b></label> <br />
+                        <label for="male" class="radio-inline"><input type="radio" name="gender" id="male">Male</label>
+
+                        <label for="female" class="radio-inline"><input type="radio" name="gender" id="female">Female</label>
+
+                        <label for="others" class="radio-inline"><input type="radio" name="gender" id="others">Others</label>
+
+                    </div>
+
+                    <!--phone number-->
+                    <div class="phonenumber">
+                        <label><b>Phone Number</b></label>
+                        <input type="number" placeholder="Enter Phone Number" name="phoneno" required />
+                    </div>
+
+                    <!--login-->
+                    <button type="submit">Sign Up</button>
+                    <input type="checkbox" checked="checked">
+                    Remember me
+                </div>
+
+                <!--cancel & forgrot password-->
+                <div class="container" id="aborting" style="background-color: #f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+
+            
+            <form class="modal-content animate" action="actio_page.php">
+
+                <!--image-->
+                <div class="imgcontainerIn">
+                    <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="close Modal">&times;</span>
+                    <img src="tw.png" class="avatar" />
+                </div>
+
+                <div class="container">
+                    <!--username-->
+                    <label><b>Username</b></label>
+                    <input type="text" placeholders="Enter Username" name="uname" required />
+
+                    <!--password-->
+                    <label><b>Password</b></label>
+                    <input type="password" placeholders="Enter Password" name="psw" required />
+
+                    <!--login-->
+                    <button type="submit">Sign In</button>
+                    <input type="checkbox" checked="checked">
+                    Remember me
+                </div>
+
+                <!--cancel & forgrot password-->
+                <div class="container" id="abortingIn" style="background-color: #f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

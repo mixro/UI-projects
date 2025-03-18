@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Gaming Website Page | icxep studio</title>
+        <link href="logo.png" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" media="screen" href="websitestyle.css" />
+    </head>
+    <body>
+ 
+
+
+        <div class="container">
+            <!--navigation pane-->
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <img src="miceplogo.png" class="logo1" />
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="#">Game Controller</a></li>
+                        <li><a href="#">VR Accesories</a></li>
+                        <li><a href="#">Media Remote</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+
+            <!--content pane--> 
+            <div class="row">
+                <div class="col-1">
+                    <h2>PS4 V2 Dualshock 4</h2>
+                    <h3>Wireless Controller for Playstation</h3>
+                    <p>(Compatible/Generic)</p>
+                    <h4>$32.50</h4>
+                    <button type="button"> Buy Now<img src="arrow.png" /> </button>
+                </div>
+                <div class="col-2">
+                    <img src="controller.png" class="controller"/>
+                    <div class="color-box"></div>
+                    <div class="add-btn">
+                        <img src="add.png">
+                        <p><small>Add to Cart</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--SOCIAL MEDIAS icons-->
+            <div class="social-links">
+                <img src="fb.png" />
+                <img src="ig.png" />
+                <img src="tw.png" />
+            </div>
+        </div>
+
+
+        <!--script for toggle menu in navigation-bar-->
+        <script>
+             
+              var menuList = document.getElementById("menuList");
+              menuList.style.maxHeight = "0px";
+
+              function togglemenu() {
+                  if (menuList.style.maxHeight == "0px") 
+                  {
+                      menuList.style.maxHeight = "130px";
+                  }
+                  else 
+                  {
+                    menuList.style.maxHeight = "0px";
+                  }
+              }
+        </script>
+    </body>
+</html>

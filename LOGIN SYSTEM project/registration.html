@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Registration on PHP | icxep studio</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="registration.css" />
+        <link href="" rel="shortcut icon" type="image/x-icon">
+    </head>
+
+    <body>
+
+
+        <div class="container">
+            <div class="row">
+                
+                 <!--LOGIN FORM-->
+                <div class="login" id="column">
+                    <h2> Login Here </h2>
+                    <form action="http://localhost/chongprograms/registration/validation.php" method="post">
+    
+                        <div class="loginInput"> 
+                            <label><b>Username</b></label>
+                            <input type="text" name="user" placeholder="Enter Username" class="inputs" required/>
+                        </div>
+                        <div class="loginInput"> 
+                            <label><b>Password</b></label>
+                            <input type="password" name="password" placeholder="Enter password" class="inputs" required/>
+                        </div>
+                        <div class="loginbtn">
+                            <button type="submit" id="specialbtn">Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!--REGISTRATION PART-->
+                <div class="registration" id="column">
+                    <h2> Register Here </h2>
+                    <form action="http://localhost/chongprograms/registration/registration.php" method="post">
+    
+                        <div class="loginInput"> 
+                            <label><b>Username</b></label>
+                            <input type="text" name="user" placeholder="Enter Username" class="inputs"  required/>
+                        </div>
+                        <div class="loginInput"> 
+                            <label><b>Password</b></label>
+                            <input type="password" name="password" placeholder="Enter password" class="inputs" required/>
+                        </div>
+                        <div class="loginbtn">
+                            <button type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Welcome To MiCEP</p>
+            </div>
+        </div>
+    </body>
+</html>

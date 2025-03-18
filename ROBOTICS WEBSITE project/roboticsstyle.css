@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background: black;
+    overflow: hidden;
+    cursor: none;
+}
+.row {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+.left-box {
+    flex-basis: 20%;
+    background: #002e52;
+    padding: 30px 32px;
+}
+.logo {
+    width: 110px;
+}
+.micep-logo {
+    position: absolute;
+    width: 170px;
+    top: 9%;
+    left: 6%;
+}
+.search-box {
+    display: flex;
+    width: 100%;
+    padding: 7px 7px;
+    border-radius: 25px;
+    background: #fff;
+    margin-top: 10px;
+}
+.search-box img{
+    width: 20px;
+    margin: auto 5px;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 3;
+}
+::placeholder {
+    color: black;
+}
+.straigth-line {
+    width: 1px;
+    height: 264px;
+    margin-top: 15px;
+    
+    background: rgb(156, 157, 160);
+}
+.services ul li {
+    list-style: none;
+    margin-top: 10px;
+    
+}
+.services ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(156, 157, 160);
+}
+
+
+
+
+.right-box {
+    padding-left: 60px;
+    flex-basis: 80%;
+    color: #fff;
+    position: relative;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 40px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 60px;
+}
+.right-text {
+    font-size: 30px;
+    margin-top: 60px;
+}
+.banner-img {
+    position: absolute;  
+    right: 4%;
+    top: 5%;
+    height: 90%;
+}
+.banner-img img{
+    width: 500px;
+}
+.watermark {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    z-index: -1;
+}
+.watermark p {
+    font-size: 140px;
+    font-weight: bolder;
+    color: rgb(66, 61, 61);
+}
+.pagination {
+    bottom: 4%;
+    position: absolute;
+}
+.pagination ul li {
+    list-style: none;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: underline;
+}
+.pagination .active {
+    font-size: 25px;
+    font-weight: 500;
+}
+.circle {
+    width: 180px;
+    height: 180px;
+    top: 43%;
+    left: -90px;
+    border-radius: 50%;
+    border: 40px solid rgba(126, 122, 122, 0.3);
+    position: absolute;
+}
+.buttons {
+    right: 49%;
+    margin-top: 6%;
+    position: absolute;
+}
+.buttons div {
+    display: flex;
+    margin-bottom: 18px;
+    align-items: center;
+    cursor: pointer;
+}
+.buttons div:nth-child(2) {
+    margin-left: 39px;
+}
+.buttons .download {
+    margin-left: 72px;
+    position: absolute;
+}
+.buttons div img{
+    width: 50px;
+    margin-left: 20px;
+}
+.voice {
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+.voice img {
+    width: 30px;
+}
+
+
+
+
+.smallcursor {
+    width: 10px;
+    height: 10px;
+    background: #3fc9f5;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.largecursor {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #3fc9f5;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+a {
+    position: relative;
+    z-index: 2;
+}

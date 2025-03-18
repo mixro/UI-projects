@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Image Slider | micep studio</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="sliderstyle.css" />
+        <link href="" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="swiper">
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="aston-martin.jpg"></div>
+                  <div class="swiper-slide"><img src="audi-rs-e-tron-gt.jpg"></div>
+                  <div class="swiper-slide"><img src="maserati-mc20.jpg"></div>
+                  <div class="swiper-slide"><img src="nio-et5.jpg"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+  loop: true,
+
+ 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+    </script>
+
+    </body>
+</html>

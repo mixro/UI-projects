@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("background.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.logo {
+    width: 160px;
+    cursor: pointer;
+    height: auto;
+}
+.navbar {
+    width: 85%;
+    display: flex;
+    height: 15%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+button {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: #fbfcfd;
+    border-radius: 20px;
+    padding: 10px 25px;
+    outline: none;
+    cursor: pointer; 
+}
+.content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    z-index: 2;
+    transform: translateY(-50%);
+} 
+h1 {
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    animation: blink;
+}
+.side-bar {
+    width: 50px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#00545d, #000729);
+}
+.menu {
+    width: 25px;
+    margin: 40px auto 0;
+    display: block;
+    cursor: pointer;
+}
+.social-link {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: rotateY(-50%);
+}
+.userful-link {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+}
+.social-link img, .userful-link img{
+    width: 29px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+/*bubbles part*/
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite  ;
+}
+.bubbles {
+    width: 100%;
+    bottom: -70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+}
+
+/*animation*/
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+
+        opacity: 1;
+    }
+    70% {
+
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width:  82px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}

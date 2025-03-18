@@ -1,0 +1,134 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 380px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
+}
+.card-inner {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 2s; 
+}
+.front-face {
+    backface-visibility: hidden;
+}
+.front-face img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(248, 2, 2, 0.3);
+}
+.back-face {
+    backface-visibility: hidden;
+    background: #c62600;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left:0;
+    border-radius: 10px;
+    border: 2px solid rgba(2, 129, 248, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+.back-face h2 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.back-face p {
+    font-size: 26px;
+    font-weight: 260;
+}
+.social-media img {
+    width: 40px;
+    height: 40px;
+    background: #e43a00;
+    border-radius: 50%;
+    margin: 50px 6px 25px 6px;
+}
+.social-media img:hover {
+    background: #c62600;
+}
+.btn {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 50px;
+    border-radius: 25px;
+    margin: 80px auto 0;
+}
+
+
+
+      /*STYLES FOR LOGO*/
+      
+.logo {
+    width: 160px;
+    perspective: 1000;
+    cursor: pointer;
+    top: 4%;
+    left: 4%;
+    position: absolute;
+}
+.logoinner {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.frontlogo, .backlogo {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+}
+.logo:hover .logoinner {
+    transform: rotateY(-180deg);
+}
+.frontlogo:hover img {
+    border-radius: 15px;
+    border: 1px solid rgba(2, 129, 248, 0.5);
+}
+
+.backlogo {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color:#e43a00;
+    border-radius: 15px;
+}
+.frontlogo {
+    backface-visibility: hidden;
+}
+
+.frontlogo img {
+    background: #2b2b2b;
+    width: 160px;
+}
+.backlogo a img {
+    width: 46px;
+    border-radius: 50%;
+}
+.backlogo a img:hover {
+    background: #c62600;
+}

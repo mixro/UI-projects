@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Coupon Code | micep international</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="couponStyle.css" />
+        <link href="" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="coupon-card">
+                <img src="logo1.png" class="logo">
+                <h3>20% flat off on all rides within the city <br /> using HDFC Credit Card</h3>
+
+                <div class="coupon-row">
+                    <span id="cpncode">STEALDEAL22</span>
+                    <span id="cpnbtn">COPY CODE</span>
+                </div>
+                <p>Valid Till: 20 Dec, 2022</p>
+
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+
+            </div>
+        </div>
+
+        <!--click feature in coupon card-->
+        <script>
+
+            var cpnbtn = document.getElementById("cpnbtn");
+            var cpncode = document.getElementById("cpncode");
+
+            cpnbtn.onclick = function() {
+                navigator.clipboard.writeText(cpncode.innerHTML);
+                cpnbtn.innerHTML = "COPIED";
+                setTimeout(function() {
+                    cpnbtn.innerHTML = "COPY CODE";
+                }, 3000);
+            }
+
+        </script>
+
+    </body>
+</html>

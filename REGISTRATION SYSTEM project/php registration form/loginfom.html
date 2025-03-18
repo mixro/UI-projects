@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" media="screen" href="loginFormStyle.css" />
+        <link href="" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <style>
+   
+    </style>
+    <body>
+ 
+        <h2>Modal Login Form</h2>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto">Login In</button>
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="http://localhost/chongprograms/loginform/login.php" method="post">
+
+                <!--image-->
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="close Modal">&times;</span>
+                    <img src="tw.png" class="avatar" />
+                </div>
+
+                <div class="container">
+                    <!--username-->
+                    <label><b>Username</b></label>
+                    <input type="text" placeholders="Enter Username" name="uname" required />
+
+                    <!--password-->
+                    <label><b>Password</b></label>
+                    <input type="password" placeholders="Enter Password" name="psw" required />
+
+                    <!--login-->
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked">
+                    Remember me
+                </div>
+
+                <!--cancel & forgrot password-->
+                <div class="container" id="aborting" style="background-color: #f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

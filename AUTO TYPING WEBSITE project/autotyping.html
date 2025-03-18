@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Website With Auto-typing Effect | micep studio</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="autotypingstyle.css" />
+        <link href="" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="header">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                </ul>
+                <img src="menu.png" class="menu-icon">
+            </nav>
+
+            <div class="text-box">
+                <h1>I'm <span class="auto-input"></span></h1>
+                <p>You can reach out to me if you need any help in making a<br> website for you or your business</p>
+                <a href="#">Contact Me</a>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+
+            <img src="user.png" class="user-img" />
+            <img src="miceplogo1.png" class="micep-logo" />
+            <div class="social-link">
+                <a href="https://facebook.com"><img src="facebook.png" ></a> 
+                <a href="https://telegram.com"><img src="telegram.png" ></a>
+                <a href="https://twitter.com"><img src="twitter.png" ></a>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+
+            var types = new Typed(".auto-input", {
+                strings: ["Anna Amelia", "Web Developer", "UI designer"],
+                typeSpeed: 200,
+                backSpeed: 100,
+                loop: true
+            })
+        </script>
+    </body>
+</html>

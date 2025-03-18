@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Robotics Technology Community | micep studio</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="roboticsstyle.css" />
+        <link href="play.png" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="left-box">
+                <div class="logo" >
+                    <img src="miceplogo1.png" class="micep-logo">
+                </div>
+
+
+                <div class="search-box">
+                    <img src="search.png">
+                    <input type="text" placeholder="Search Here..">
+                </div>
+
+                <div class="straigth-line"></div>
+
+                <div class="services">
+                    <ul>
+                        <li><a href="#">PRODUCTION</a></li>
+                        <li><a href="#">FACILITY</a></li>
+                        <li><a href="#">MECHANISM</a></li>
+                        <li><a href="#">OUR TEAM</a></li>
+                        <li><a href="#">OUR IDEAS</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">TECHNOLOGY</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="right-text">
+                    <h1>THE NEXT <br/>GENERATION</h1>
+                </div>
+
+                <div class="banner-img">
+                    <img src="robo.png">
+                </div>
+                <div class="watermark">
+                    <p>ROBOTICS</p>
+                </div>
+
+                <div class="circle">
+                    <div class="small-circle"></div>
+                </div>
+
+                <div class="buttons">
+                    <div>
+                        <p>WATCH PREVIEW</p>
+                        <img src="play.png">
+                    </div>
+                    <div>
+                        <p>THE MAKING</p>
+                        <img src="settings.png">
+                    </div>
+                    <div class="download">
+                        <p>DOWNLOAD PDF</p>
+                        <img src="download.png">
+                    </div>
+                </div>
+
+                <div class="voice">
+                    <img src="volume.png">
+                </div>
+
+                <div class="pagination">
+                    <ul>
+                        <li class="active">01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="smallcursor"></div>
+            <div class="largecursor"></div>
+
+        </div>
+
+        <script>
+
+            var smallcursor = document.querySelector(".smallcursor");
+            var largecursor = document.querySelector(".largecursor");
+
+            document.onmousemove = function(e) {
+                smallcursor.style.left = (e.pageX - 5) + "px";
+                smallcursor.style.top = (e.pageY - 5) + "px";
+
+                smallcursor.style.display = "block";
+
+                largecursor.style.left = (e.pageX - 22) + "px";
+                largecursor.style.top = (e.pageY - 22) + "px";
+
+                largecursor.style.display = "block";
+            }
+
+        </script>
+
+    </body>
+</html>

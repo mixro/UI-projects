@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+.micep-logo {
+    width: 100px;
+    position: absolute;
+    left: 5%;
+    top: 7%;
+}
+.scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scan h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #3fefef;
+    animation: animate-text 0.5s steps(1) infinite;
+}
+.scan .fingerprint {
+    width: 300px;
+    position: relative;
+    height: 380px;
+    background: url(fingerPrint_01.png);
+    background-size: 300px;
+}
+.scan .fingerprint::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(fingerPrint_02.png);
+    background-size: 300px;
+    animation:  animate 4s ease-in-out infinite;
+}
+.scan .fingerprint::after {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3fefef;
+    position: absolute;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 20px #3fefef);
+    animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate {
+    0%,100% {
+        height: 0;
+    }
+    50% {
+        height: 100%;
+    }
+}
+@keyframes animate_line {
+    0%,100% {
+        top: 0;
+    }
+    50% {
+        top: 100%;
+    }
+}
+@keyframes animate-text {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}

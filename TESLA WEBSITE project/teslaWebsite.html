@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Car Website Design | icxep studio</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="teslawebsite.css " />
+        <link href="image-1.png" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <style>
+
+    </style>
+    <body>
+ 
+        <!--header-->
+        <div class="header" id="header"> 
+            <nav>
+                <img src="logo.png" class="logo" />
+                <ul>
+                    <li><a href="#" id="models">Model S</a></li>
+                    <li><a href="#" id="model3">Model 3</a></li>
+                    <li><a href="#" id="modelx">Model X</a></li>
+                    <li><a href="#" id="modely">Model Y</a></li>
+                </ul>
+                <a href="#" class="btn">Reserve Now</a>
+            </nav>
+
+            <div class="info">
+
+                <div>
+                    <h2  id="time">1.9 s</h2>
+                    <p>60 mph</p>
+                </div>
+                <div>
+                    <h2 id="speed">200 mph</h2>
+                    <p>Top Speed</p>
+                </div>
+                <div>
+                    <h2 id="range">396 mi</h2>
+                    <p>Max Range</p>
+                </div>
+
+
+                <div class="line">
+                </div>
+
+
+                <div>
+                    <h2 id="model">Model S</h2>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var header = document.getElementById("header");
+            var ms = document.getElementById("models");
+            var m3 = document.getElementById("model3");
+            var mx = document.getElementById("modelx");
+            var my = document.getElementById("modely");
+            var model = document.getElementById("model");
+            var time = document.getElementById("time");
+            var speed = document.getElementById("speed");
+            var range = document.getElementById("range");
+
+            ms.onclick = function() {
+                header.style.backgroundImage = "url(image-1.png)";
+                model.innerHTML = "Model S";
+                time.innerHTML = "1.9 s";
+                speed.innerHTML = "200 mph";
+                range.innerHTML = "396 mi";
+            }
+            m3.onclick = function() {
+                header.style.backgroundImage = "url(image-2.png)";
+                model.innerHTML = "Model 3";
+                time.innerHTML = "2.2 s";
+                speed.innerHTML = "198 mph";
+                range.innerHTML = "376 mi";
+            }
+            mx.onclick = function() {
+                header.style.backgroundImage = "url(image-3.png)";
+                model.innerHTML = "Model X";
+                time.innerHTML = "1.6 s";
+                speed.innerHTML = "210 mph";
+                range.innerHTML = "400 mi";
+            }
+            my.onclick = function() {
+                header.style.backgroundImage = "url(image-4.png)";
+                model.innerHTML = "Model Y";
+                time.innerHTML = "1.4 s";
+                speed.innerHTML = "221 mph";
+                range.innerHTML = "419 mi";
+            }
+
+        </script>
+    </body>
+</html>

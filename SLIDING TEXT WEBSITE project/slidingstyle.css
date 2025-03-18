@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: rgba(29, 33,61,0.5);
+    padding: 0 60px 0 25px;
+    box-sizing: border-box;
+}
+.navbar .logo {
+    width: 185px;
+}
+.logo img {
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+img.micep-logo {
+    width: 100px;
+    position: absolute;
+    left: 59px;
+    top: 7%;
+}
+nav {
+    flex: 1;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.user {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+.user img {
+    width: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+
+
+.sidebar {
+    width: 155px;
+    height: 100vh;
+    background: rgba(29, 31,58,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.search-icon {
+    width: 20px;
+    display: block;
+    margin: 120px auto 0;
+}
+.social-links {
+    display: block;
+    width: 20px;
+    margin: 150px auto 0;
+    text-align: center;
+}
+.social-links img {
+    height: 15px;
+    margin-bottom: 35px;
+}
+.info-icon {
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+
+
+
+.msg-container {
+    width: 500px;
+    height: 280px;
+    top: 57%;
+    left: 14%;
+    position: absolute;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#slider {
+    display: inline-flex;
+    transition: 0.5s;
+}
+.msg-col {
+    width: 500px;
+    height: 280px;
+}
+.msg-col h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.msg-col p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 20px;
+}
+.msg-col a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    padding: 10px 35px;
+    border-radius: 30px;
+    background: #fff;
+    margin-top: 25px;
+}
+
+
+
+
+
+.controller {
+    width: 1px;
+    height: 320px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 53%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+#line1,#line2,#line3,#line4 {
+    width: 30px;
+    height: 80px;
+    cursor: pointer;
+}
+#active {
+    width: 5px;
+    height: 80px;
+    border-radius: 10px;
+    background: #fff;
+    top: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}

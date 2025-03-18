@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 8%;
+}
+.logo {
+    width: 120px;
+    margin-top: 2%;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #ff3753;
+    border-radius: 5px;
+}
+.micep-logo {
+    width: 120px;
+    left: 8%;
+    position: absolute;
+    top: 8%;
+    background: #ff3753;
+    padding: 0 1px;
+    border-radius: 5px;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+.content span {
+    color: #ff3753;
+}
+.content button {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.launching-time {
+    display: flex;
+    margin-top: 15px;
+}
+.launching-time div {
+    flex-basis: 100px;
+}
+.launching-time div span {
+    color: #fff;
+}
+.launching-time div p {
+    font-size: 70px;
+    margin-bottom: -10px;
+}
+
+
+.rocket {
+    width: 230px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 105%;
+    }
+}
